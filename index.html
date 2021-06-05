@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <title></title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+
+    <div class="dataV-container">
+        <div class="dataV-wrap">
+            <div class="dataV-top"></div>
+            <div class="dataV-main">
+                <div class="main-content">
+                    <div class="content-left">
+                        <div class="left-child-1">
+                            <div class="content-title">今日进场次数</div>
+                            <div class="today-into-number">
+                                <div class="today-into-number-ceil">3</div>
+                                <div class="today-into-number-ceil">2</div>
+                                <div class="today-into-number-ceil">4</div>
+                                <div class="today-into-number-ceil">6</div>
+                                <div class="today-into-number-ceil">5</div>
+                                <span class="today-into-number-unit">次</span>
+                            </div>
+                            <div id="today-into-line-chart"></div>
+                        </div>
+                        <div class="left-child-2">
+                            <div class="content-title">商户排行榜</div>
+                            <div class="shop-rank-category">
+                                <div class="shop-rank-category-ceil">猪肉</div>
+                                <div class="shop-rank-category-ceil">蔬菜</div>
+                                <div class="shop-rank-category-ceil">鸡肉</div>
+                                <div class="shop-rank-category-ceil">其他</div>
+                            </div>
+                            <div class="recent-seven-day-num">近七日  <span class="recent-seven-day-num-unit">(公斤)</span></div>
+                            <div id="shop-rank-bar-chart"></div>
+                        </div>
+                    </div>
+                    <div class="content-center">
+                        <div class="center-child">
+                            <div class="child-block">
+                                <div class="title block-1">肉类累计重量</div>
+                                <div class="num"><span id="meat-num"></span><span>kg</span></div>
+                                <div class="block-3"><span style="background: #008DEB"></span><span>本周  250000</span></div>
+                                <div class="block-3"><span style="background: #00CE9E"></span><span>今日  25000</span></div>
+                            </div>
+                            <div class="child-block">
+                                <div class="title block-1">蔬菜累计重量</div>
+                                <div class="num"><span id="vegetable-num"></span><span>kg</span></div>
+                                <div class="block-3"><span style="background: #008DEB"></span><span>本周  250000</span></div>
+                                <div class="block-3"><span style="background: #00CE9E"></span><span>今日  25000</span></div>
+                            </div>
+                            <div class="child-block">
+                                <div class="title block-1">三鸟累计数量</div>
+                                <div class="num"><span id="bird-num"></span><span>只</span></div>
+                                <div class="block-3"><span style="background: #008DEB"></span><span>本周  250000</span></div>
+                                <div class="block-3"><span style="background: #00CE9E"></span><span>今日  25000</span></div>
+                            </div>
+                        </div>
+                        <div class="center-child-2">
+                            <img src="./image/map-bg.png" alt="地图"/>
+                            <div id="map"></div>
+                        </div>
+                        <div class="center-child-3">
+                            <div class="market-shop-num">
+                                <div class="market-title-wrapper">
+                                    <img src="./image/logo.png" style="width: 12px;height: 12px;" alt="商户数">
+                                    <div class="market-shop-num-title">商户数</div>
+                                    <img src="./image/arrow.png" style="width: 14px;height: 9px;" alt="箭头">
+                                </div>
+                                <div class="market-shop-info-wrapper">
+                                    <img src="./image/shop-num.png" style="width: 80px;height: 80px;" alt="进驻商户数">
+                                    <div class="market-shop-info">
+                                        <div class="market-shop-info-title">进驻商户数</div>
+                                        <div class="market-shop-info-value">3,295,040</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <img src="./image/split-line.png" style="width: 18px;height: 123px;margin-left: 26px;" alt="分割线">
+                            <div class="market-shop-num" style="padding-left: 42px">
+                                <div class="market-title-wrapper">
+                                    <img src="./image/logo.png" style="width: 12px;height: 12px;" alt="商户数">
+                                    <div class="market-shop-num-title" style="margin-right: 261px">商户数</div>
+                                    <img src="./image/arrow.png" style="width: 14px;height: 9px;" alt="箭头">
+                                </div>
+                                <div class="market-shop-info-wrapper">
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content-right">
+                        <div class="content-title">检测统计</div>
+                        <div class="right-top">
+                            <div class="top-card">
+                                <div id="right-pie-chart"></div>
+                                <div class="child-block">
+                                    <div class="pie-title title block-1">肉类累计重量</div>
+                                    <div class="num"><span style="font-size: 30px;opacity: 1;margin: 0">3,295,040</span></div>
+                                    <div class="block-3"><span style="background: #008DEB"></span><span>本周  250000</span></div>
+                                    <div class="block-3"><span style="background: #00CE9E"></span><span>今日  25000</span></div>
+                                </div>
+                            </div>
+                            <div class="top-card" style="margin-left: 13px">
+                                <div id="right-pie-chart2"></div>
+                                <div class="child-block">
+                                    <div class="pie-title title block-1">肉品检验证数量</div>
+                                    <div class="num"><span style="font-size: 30px;opacity: 1;margin: 0">992,032</span></div>
+                                    <div class="block-3"><span style="background: #008DEB"></span><span>本周  250000</span></div>
+                                    <div class="block-3"><span style="background: #00CE9E"></span><span>今日  25000</span></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="left-child-2">
+                            <div class="content-title">商户排行榜</div>
+                            <div class="shop-rank-category">
+                                <div class="shop-rank-category-ceil">猪肉</div>
+                                <div class="shop-rank-category-ceil">蔬菜</div>
+                                <div class="shop-rank-category-ceil">鸡肉</div>
+                                <div class="shop-rank-category-ceil">其他</div>
+                            </div>
+                            <div class="recent-seven-day-num">近七日  <span class="recent-seven-day-num-unit">(公斤)</span></div>
+                            <div id="series-bar-chart"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="main-bottom"></div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.bootcss.com/echarts/4.2.1-rc1/echarts.min.js"></script>
+    <script src="https://cdn.bootcdn.net/ajax/libs/jquery/2.2.3/jquery.min.js"></script>
+<!--    <script src="https://cdn.bootcdn.net/ajax/libs/countup.js/2.0.7/countUp.js"></script>-->
+    <script type="text/javascript" src="index.js"></script>
+    <script type="text/javascript" src="./js/bar-chart.js"></script>
+    <script type="text/javascript" src="./js/line-chart.js"></script>
+    <script type="text/javascript" src="./js/pie-chart.js"></script>
+    <script type="text/javascript" src="./js/pie-chart2.js"></script>
+    <script type="text/javascript" src="./js/seriesBar-chart.js"></script>
+
+</body>
+</html>
